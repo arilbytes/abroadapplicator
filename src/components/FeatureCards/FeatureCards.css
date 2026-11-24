@@ -1,0 +1,5 @@
+.feature-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.feature-card{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.feature-card h3{font-size:15px;color:var(--navy)}
+.feature-card p{font-size:13px;color:var(--mute);line-height:1.5;flex:1}
+.feature-card .link{align-self:flex-start;padding:0}

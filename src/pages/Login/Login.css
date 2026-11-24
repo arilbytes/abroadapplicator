@@ -1,0 +1,17 @@
+.login{display:grid;grid-template-columns:minmax(380px,5fr) 7fr;min-height:100vh}
+.login-hero{background:var(--navy);color:var(--white);padding:56px 48px;display:flex;flex-direction:column;gap:14px}
+.login-hero .logo{font-size:22px;margin-bottom:auto}
+.login-hero h1{font-size:34px;line-height:1.2;max-width:420px}
+.login-hero p{color:rgba(255,255,255,.72);max-width:420px}
+.login-form{background:var(--white);padding:56px max(32px,calc((100% - 440px)/2));display:flex;flex-direction:column;justify-content:center;gap:16px}
+.login-form h2{font-size:24px;color:var(--navy);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--white);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500}
+.chip.on{background:var(--navy);color:var(--white);border-color:var(--navy)}
+@media(max-width:1023px){
+ .login{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+ .login-hero{padding:24px 28px;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 20px}
+ .login-hero .logo{margin:0;font-size:18px}.login-hero h1{font-size:18px;flex:1;min-width:220px}.login-hero p{display:none}
+ .login-form{padding:32px 24px;justify-content:flex-start}
+}
+@media(min-width:600px) and (max-width:1023px){.login-form{padding:40px max(24px,calc((100% - 440px)/2))}}

@@ -1,0 +1,6 @@
+.journey{list-style:none;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:8px;text-align:center;font-size:12px;font-weight:500}
+.journey li{display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--mute)}
+.journey span{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--line);font-weight:600}
+.journey .done{color:var(--navy)}.journey .done span{background:var(--navy);border-color:var(--navy);color:var(--white)}
+.journey .now{color:var(--primary);font-weight:600}.journey .now span{border-color:var(--primary);color:var(--primary)}
+@media(max-width:767px){.journey{grid-template-columns:repeat(2,1fr)}}

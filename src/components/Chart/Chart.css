@@ -1,0 +1,5 @@
+.bars{display:flex;align-items:flex-end;gap:18px;height:210px;padding-top:10px}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}
+.bar i{width:100%;max-width:44px;background:var(--navy);border-radius:4px 4px 0 0}
+.bar:last-child i{background:var(--accent)}.bar-v{font-size:12px;font-weight:600}
+

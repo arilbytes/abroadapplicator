@@ -1,0 +1,28 @@
+/* .logo{display:flex;flex-direction:column;line-height:1.1;color:var(--navy)}
+.logo-mark{font-size:30px;font-weight:700;letter-spacing:2px}
+.logo-sub{font-size:11px;letter-spacing:1.5px}
+.logo.light{color:var(--white)}.logo.light .logo-mark{border-bottom:3px solid var(--primary);padding-bottom:4px;align-self:flex-start}
+ */
+
+/* .logo img{display:block;width:180px;height:auto} */
+/* uploaded logos: sit on a white plate so any logo stays readable on the dark sidebar */
+/* .logo img.custom{width:auto;height:auto;max-width:180px;max-height:64px;object-fit:contain;background:#fff;padding:6px 10px;border-radius:8px} */
+
+/* Everything is sized in "em", so change font-size on .logo (or its parent) to scale the whole logo */
+.logo{font-size:16px;display:flex;color:var(--navy)}
+.logo-brand{display:inline-flex;align-items:center;gap:.6em;line-height:1}
+
+.logo-mark{width:2.4em;height:2.4em;flex-shrink:0}
+.logo-mark rect{fill:var(--accent)}
+.logo-mark path{fill:var(--navy)}
+
+.logo-text{display:flex;flex-direction:column;gap:.3em}
+.logo-name{font-size:1.45em;font-weight:700;letter-spacing:-.01em}
+.logo-sub{font-size:.68em;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--primary)}
+
+/* on dark backgrounds (sidebar, login panel) */
+.logo.light{color:#fff}
+.logo.light .logo-sub{color:var(--accent)}
+
+/* uploaded logo from the Theme settings panel: sits on a white plate so it stays readable */
+.logo-custom{display:block;width:auto;height:auto;max-width:180px;max-height:64px;object-fit:contain;background:#fff;padding:6px 10px;border-radius:8px}

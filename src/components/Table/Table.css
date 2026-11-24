@@ -1,0 +1,4 @@
+.tscroll{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:560px}
+th{text-align:left;font-size:12px;color:var(--mute);font-weight:600;padding:10px 12px;border-bottom:1px solid var(--line)}
+td{padding:12px;border-bottom:1px solid var(--line)}tr:last-child td{border:0}tbody tr:hover{background:var(--bg)}
+

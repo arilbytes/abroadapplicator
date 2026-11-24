@@ -1,0 +1,4 @@
+.admin-top{display:grid;grid-template-columns:minmax(0,3fr) minmax(260px,1fr);gap:20px;align-items:start}
+.rev-row{display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:20px}
+@media(max-width:1279px){.admin-top{grid-template-columns:1fr}}
+@media(max-width:1023px){.rev-row{grid-template-columns:1fr}}

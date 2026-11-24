@@ -1,0 +1,6 @@
+.colchart{width:100%;min-width:0;overflow-x:auto}
+.colchart svg{display:block}
+.colchart text{fill:var(--mute);font-size:11px;font-family:inherit}
+.colchart text.cc-val{fill:var(--navy);font-weight:600;font-size:12px}
+.cc-grid{stroke:var(--line);stroke-width:1}
+.cc-bar{fill:var(--navy)}.cc-bar.top{fill:var(--accent)}.cc-bar:hover{opacity:.85}

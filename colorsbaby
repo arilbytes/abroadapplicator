@@ -1,0 +1,6 @@
+This is the progress so far, We're focusing on only founder's and manager's view currently ,these are the major these changes I want :
+1) Under the current "Dashboard" of manager's overview I want the exact same things which are currently in founder's Organisation overview till revenue & outstanding along with the today's task and pending tasks table.
+
+2) One Addition in both dashboards : Gravience / Complaints Table, Position should be below pending tasks table.
+
+Your goal is to tell me which files do I have to add or alter in the current project.

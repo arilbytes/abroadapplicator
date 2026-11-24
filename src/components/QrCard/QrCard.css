@@ -1,0 +1,8 @@
+.qr-card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:14px 20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.qr-img{width:76px;height:76px;border:1px solid var(--line);border-radius:4px;padding:2px;background:var(--white)}
+.qr-title{font-size:15px;font-weight:600;color:var(--navy);flex:1;min-width:180px}
+.qr-actions{display:flex;gap:12px}
+.qr-actions .btn{display:inline-flex;align-items:center;gap:8px}
+.qr-actions .btn.ghost{color:var(--navy);border-color:var(--navy)}
+.qr-actions .btn.ghost:hover{background:var(--navy);color:var(--white)}
+@media(max-width:600px){.qr-actions{width:100%}.qr-actions .btn{flex:1;justify-content:center}}

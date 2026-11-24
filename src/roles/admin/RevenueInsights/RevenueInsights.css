@@ -1,0 +1,5 @@
+.ins{list-style:none;padding:0;display:flex;flex-direction:column;gap:12px}
+.ins li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:13px}
+.ins li span{color:var(--mute)}.ins b{color:var(--navy);text-align:right}
+.ins .up{color:#1E7A4F}.ins .down{color:#C53030}
+.ins-note{margin:16px 0 0;padding:12px;border-radius:8px;font-size:13px;line-height:1.5;background:color-mix(in srgb,var(--navy) 8%,var(--white))}

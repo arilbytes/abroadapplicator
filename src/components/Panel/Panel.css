@@ -1,0 +1,5 @@
+.grid2{display:grid;grid-template-columns:1.4fr 1fr;gap:20px}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:20px;min-width:0}
+.panel header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.panel h3{font-size:15px;color:var(--navy)}
+@media(max-width:767px){.grid2{grid-template-columns:1fr}}

@@ -1,0 +1,10 @@
+.shell{display:grid;grid-template-columns:250px 1fr;min-height:100vh}
+.main{min-width:0;display:flex;flex-direction:column}
+.content{padding:28px;display:flex;flex-direction:column;gap:20px}
+.page-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.page-head h1{font-size:24px;color:var(--navy)}.actions{display:flex;gap:10px}
+@media(max-width:1023px){.shell{grid-template-columns:1fr}.content{padding:16px}}
+.content{width:100%;max-width:1600px;margin:0 auto}
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:15}
+@media(min-width:1024px){.backdrop{display:none}}
+@media(max-width:480px){.page-head h1{font-size:20px}.actions{width:100%}.actions .btn{flex:1}}
