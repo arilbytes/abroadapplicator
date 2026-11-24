@@ -1,6 +1,13 @@
-This is the progress so far, We're focusing on only founder's and manager's view currently ,these are the major these changes I want :
-1) Under the current "Dashboard" of manager's overview I want the exact same things which are currently in founder's Organisation overview till revenue & outstanding along with the today's task and pending tasks table.
+1) Where to study? (Select 3 options max.)
+Dropdown : United States of America, Australia, Canada, United Kingdom, New Zealand, Singapore, United Arab Emirates, Ireland, Germany, France, Sweden, Netherlands, Austria, Denmark, Finland, Italy, Hungary, Switzerland, Spain, Lithuania, Latvia, Cyprus, Poland, Czech Republic, Malaysia, Mauritius, South Africa, Hong Kong, China, Bulgaria, Vietnam, Malta, Japan, Belgium, Russia, South Korea, India, Georgia, Monaco, Croatia
 
-2) One Addition in both dashboards : Gravience / Complaints Table, Position should be below pending tasks table.
+2) What study level?
+UG/UG Diploma, PG/PG Diploma, Doctoral Programs, Diploma/Certificate Programs, Others
 
-Your goal is to tell me which files do I have to add or alter in the current project.
+3) What study area?
+{
+    Agriculture, Forestry and fishery
+    Architecture, Arts, Commerce, Business and Administration, Computer Science and Information Technology, Education, Education, Engineering and Engineering Trades, Environmental Science/Protection, Health, Humanities, Journalism and Information, Law, Life Sciences, Manufacturing and Processing, Mathematics and Statistics, Personal 
+}
+4) When to study?
+5) Where do you live?

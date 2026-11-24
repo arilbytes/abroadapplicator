@@ -8,7 +8,3 @@ export const COMPLAINTS = [
 ]
 
 
-
-
-//Subject, Raised by, days ago, status : Escalated , Open , In progress
-

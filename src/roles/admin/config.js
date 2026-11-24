@@ -27,6 +27,10 @@ export default {
       ['Loan Rejected', '12', 'Total'],
       ['Visa Recieved', '340', 'Total'],
       ['Visa Rejected', '340', 'Total'],
+      ['Student Not Responding', '41', 'Total'],
+      ['Pending from Partner', '61', 'Total'],
+      ['Deferrals', '3', 'Total'],
+
       
       // { label: 'Enrolments', split: D('3', '14', '41') },
     ] },
