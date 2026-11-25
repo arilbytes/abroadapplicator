@@ -10,7 +10,7 @@ export default {
     'Overview', 'Company','Students',//'Attendance'//,
     , 'Agents',
     'Applications', 'Commercial Overview', 'Reports', 'Announcements',
-    'Roles & Permissions',
+    'Roles & Permissions', 'Essential Data',
     // added (plain append):
     'UniProg Search Engine', 'Learning Resource', //'Commission Structure',
      'Additional Services', 'Settings',

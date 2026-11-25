@@ -21,6 +21,7 @@ export default {
     "Roles & permissions",
     // "Commercial Payments",
     "UniProg Search Engine",
+    "Essential Data",
     "Learning Resources",
     "Addtional Services",
     "Contact & Support",
