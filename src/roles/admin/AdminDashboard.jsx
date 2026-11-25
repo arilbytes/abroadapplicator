@@ -16,7 +16,7 @@ export default function AdminDashboard() {
     <>
       <div className="admin-top">
         <Kpis groups={config.kpiGroups} />
-        <TaskLists />
+        <TaskLists role="admin" />
       </div>
       <TopPerformers />
       <div className="grid2">

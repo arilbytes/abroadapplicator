@@ -18,11 +18,12 @@ export default {
     "Commercial Overview",
     "Reports",
     "Announcements",
-    "Roles and permissions",
+    "Roles & permissions",
     // "Commercial Payments",
     "UniProg Search Engine",
     "Learning Resources",
     "Addtional Services",
+    "Contact & Support",
     
     
     // "Team Management",

@@ -18,7 +18,7 @@ const ROLES = {
   manager: { ...manager, Dashboard: ManagerDashboard },
   // agent: { ...agent, Dashboard: AgentDashboard },
   // lead: { ...lead, Dashboard: TeamLeadDashboard },
-  // employee: { ...employee, Dashboard: EmployeeDashboard },
+  employee: { ...employee, Dashboard: EmployeeDashboard },
   // student: { ...student, Dashboard: StudentDashboard },
 }
 export default ROLES

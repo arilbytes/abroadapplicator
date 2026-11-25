@@ -27,7 +27,7 @@ export default function ManagerDashboard() {
     <>
       <div className="admin-top">
         <Kpis groups={config.kpiGroups} />
-        <TaskLists />
+        <TaskLists role="manager" />
       </div>
       <TopPerformers show={['Employees', 'Agents']} />
       <div className="grid2">

@@ -8,3 +8,4 @@ export const REGIONAL_MANAGERS = [
   { name: 'Tejaswi Nair', role: 'Sr. Manager – Sales', phone: '+91 7420022093', city: 'Mumbai', email: 'tnair@kcoverseas.com' },
   { name: 'Abhijit Naik', role: 'Vice President – Sales', phone: '+91 7758937523', city: 'Pune', email: 'anaik@kcoverseas.com' },
 ]
+

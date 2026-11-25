@@ -11,9 +11,9 @@ export default function DashboardLayout({ role, setRole, onLogout }) {
   return (
     <div className="shell">
       {open && <div className="backdrop" onClick={() => setOpen(false)} />}
-      <Sidebar nav={nav} page={page} setPage={setPage} open={open} setOpen={setOpen} onLogout={onLogout} />
+      <Sidebar nav={nav} page={page} setPage={setPage} open={open} setOpen={setOpen} />
       <div className="main">
-        <Topbar role={role} onRoleChange={k => { setRole(k); setPage(0) }} onMenu={() => setOpen(!open)} />
+        <Topbar role={role} onRoleChange={k => { setRole(k); setPage(0) }} onMenu={() => setOpen(!open)} onLogout={onLogout} />
         <main className="content">
           {page === 0 && qrCard && <QrCard />}
           <div className="page-head">
@@ -22,7 +22,7 @@ export default function DashboardLayout({ role, setRole, onLogout }) {
       <div className="actions">
       <button className="btn ghost">Export</button>
       {page === 0 && <button className="btn">{role === 'student' ? 'Upload document' : 'Add student'}</button>}
-      {page === 0 && ['admin', 'manager'].includes(role) && <button className="btn">Add agent</button>}
+      {page === 0 && ['admin', 'manager', 'employee'].includes(role) && <button className="btn">Add agent</button>}
       </div>
       )}
           </div>
@@ -32,4 +32,3 @@ export default function DashboardLayout({ role, setRole, onLogout }) {
     </div>
   )
 }
-

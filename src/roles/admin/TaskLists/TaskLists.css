@@ -5,3 +5,16 @@
 .tasklist li>div{display:flex;flex-direction:column;min-width:0;line-height:1.4}.tasklist b{font-size:13px}
 .tasklist .pill{flex:none}
 @media(max-width:1279px){.task-lists{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}}
+/* to-do items */
+.task-lists.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start}
+.todo-add{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.todo-add input{flex:1 1 140px;min-width:0}.todo-add select{flex:0 1 110px}.todo-add .btn{padding:8px 14px}
+.tasklist li.todo{justify-content:flex-start;align-items:flex-start}
+.todo input[type=checkbox]{flex:none;width:16px;height:16px;min-height:0;margin-top:3px;accent-color:var(--primary)}
+.todo-text{flex:1}
+.todo-title{font-size:13px;font-weight:600;line-height:1.5}
+.todo.done .todo-title{text-decoration:line-through;color:var(--mute);font-weight:400}
+.todo-tag{display:inline-block;margin-right:6px;padding:0 8px;border-radius:10px;font-size:11px;font-weight:600;background:color-mix(in srgb,var(--accent) 22%,var(--white));color:var(--navy);text-decoration:none}
+.todo-del{flex:none;background:none;border:0;color:var(--mute);font-size:18px;line-height:1;padding:0 4px}
+.todo-del:hover{color:var(--primary)}
+.tasklist li.empty{display:block}
