@@ -13,3 +13,6 @@ UG/UG Diploma, PG/PG Diploma, Doctoral Programs, Diploma/Certificate Programs, O
 5) Where do you live?
 
 which file to alter to change operations executive to something else from nav bar of employee's view
+
+In the employee's view, I want to add top performing agents and worst performing agents in a single table below the today's and pending tasks table
+
