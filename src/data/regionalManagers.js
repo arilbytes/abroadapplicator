@@ -7,8 +7,8 @@ export const REGIONAL_MANAGERS = [
   // { name: 'Alice Sadarwarti', role: 'Sr. Associate – Sales', phone: '+91 9175976729', city: 'Nagpur', email: 'aasadawarti@kcoverseas.com' },
   // { name: 'Tejaswi Nair', role: 'Sr. Manager – Sales', phone: '+91 7420022093', city: 'Mumbai', email: 'tnair@kcoverseas.com' },
   // { name: 'Abhijit Naik', role: 'Vice President – Sales', phone: '+91 7758937523', city: 'Pune', email: 'anaik@kcoverseas.com' },
-  { name: 'Pinki Thakur', role: 'Recruitment – HR', phone: '+91 7758937523', city: 'Delhi', email: 'anaik@kcoverseas.com' },
-  { name: 'Shabana Ji', role: 'Manager – GM', phone: '+91 7758937523', city: 'Delhi', email: 'anaik@kcoverseas.com' },
-  { name: 'Mr. Tejas', role: 'Founder – CEO', phone: '+91 7758937523', city: 'Delhi', email: 'anaik@kcoverseas.com' },
+  { name: 'Pinki Thakur', role: 'Recruitment – HR', phone: '+91 7303027614', city: 'Delhi', email: 'pinkithakur@gmail.com' },
+  { name: 'Shabana ', role: 'Manager – GM', phone: '+91 7758937523', city: 'Delhi', email: 'shabana@gmail.com' },
+  { name: 'Mr. Tejas', role: 'Founder – CEO', phone: '+91 7303020940', city: 'Delhi', email: 'journeyconsultation@gmail.com' },
 ]
 
