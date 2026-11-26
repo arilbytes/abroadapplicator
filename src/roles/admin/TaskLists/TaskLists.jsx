@@ -31,6 +31,8 @@ import ROLES from '../../index'
 import { useTasks, assignableRoles } from '../../../context/TasksContext'
 import { COMPLAINTS } from '../../../data/complaints'
 
+const SHOW_ASSIGN_DROPDOWN = false // set to true to show the "For Me / Employee" dropdown again
+
 const label = k => ROLES[k]?.label ?? k
 const daysLate = (date, today) => Math.round((new Date(today) - new Date(date)) / 864e5)
 // Tag shown in front of a task that was handed over: "From Manager" for the receiver, "To Employee" for the sender
@@ -66,7 +68,7 @@ function AddTask({ role }) {
   return (
     <form className="todo-add" onSubmit={submit}>
       <input value={text} onChange={e => setText(e.target.value)} placeholder="Add a task for today" aria-label="New task" maxLength={120} />
-      {targets.length > 0 && (
+      {SHOW_ASSIGN_DROPDOWN && targets.length > 0 && (
         <select value={to} onChange={e => setTo(e.target.value)} aria-label="Assign to">
           <option value={role}>For Me</option>
           {targets.map(k => <option key={k} value={k}>{label(k)}</option>)}
