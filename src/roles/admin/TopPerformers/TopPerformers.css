@@ -9,3 +9,6 @@
 .who b{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .val{display:flex;flex-direction:column;align-items:flex-end;line-height:1.3;flex:none}
 .val b{font-size:14px;color:var(--navy)}
+/* "worst performing" box: no highlighted rank badge, values in the primary colour */
+.top-box.low .rank.r1{background:var(--bg);color:var(--navy)}
+.top-box.low .val b{color:var(--primary)}

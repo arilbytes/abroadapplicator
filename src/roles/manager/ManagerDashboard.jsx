@@ -15,26 +15,31 @@
 //     </>
 //   )
 // }
-import '../admin/AdminDashboard.css' // reuses the 3/4 + 1/4 layout (.admin-top)
-import { Kpis, Panel, Chart, Alerts, Table } from '../../components'
 import TopPerformers from '../admin/TopPerformers/TopPerformers'
-import TaskLists from '../admin/TaskLists/TaskLists'
+import { AGENT_GROUPS } from '../../data/agentPerformance'
+import { Kpis, Panel, Chart, Alerts, Table, ContactGrid } from '../../components'
+import { REGIONAL_MANAGERS } from '../../data/regionalManagers'
 import { STUDENTS, STU_HEAD } from '../../data/mock'
+import TaskLists from '../admin/TaskLists/TaskLists'
+import '../admin/AdminDashboard.css'
 import config from './config'
 
-export default function ManagerDashboard() {
+export default function EmployeeDashboard() {
   return (
     <>
       <div className="admin-top">
         <Kpis groups={config.kpiGroups} />
-        <TaskLists role="manager" />
+        <TaskLists role="employee" />
       </div>
-      <TopPerformers show={['Employees', 'Agents']} />
+
+      <TopPerformers title="Agent performance" groups={AGENT_GROUPS} />
+
       <div className="grid2">
         <Panel title="Applications by month"><Chart /></Panel>
         <Panel title="Needs attention" action="View all"><Alerts /></Panel>
       </div>
       <Panel title="Recent students" action="View all"><Table head={STU_HEAD} rows={STUDENTS} /></Panel>
+      <ContactGrid title="Contact regional manager" people={REGIONAL_MANAGERS} />
     </>
   )
 }

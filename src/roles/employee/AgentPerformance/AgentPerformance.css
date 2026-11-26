@@ -1,0 +1,5 @@
+.perf{display:inline-block;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap}
+.perf.up{background:#E3F5EC;color:#1E7A4F}
+.perf.down{background:var(--tint);color:var(--primary)}
+/* divider between the top group and the lowest group */
+tbody tr:has(.perf.up)+tr:has(.perf.down) td{border-top:2px solid var(--line)}
