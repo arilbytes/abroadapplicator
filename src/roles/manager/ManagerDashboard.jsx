@@ -15,6 +15,7 @@
 //     </>
 //   )
 // }
+import { contactsFor } from '../../data/regionalManagers'
 import TopPerformers from '../admin/TopPerformers/TopPerformers'
 import { AGENT_GROUPS } from '../../data/agentPerformance'
 import { Kpis, Panel, Chart, Alerts, Table, ContactGrid } from '../../components'
@@ -39,7 +40,7 @@ export default function EmployeeDashboard() {
         <Panel title="Needs attention" action="View all"><Alerts /></Panel>
       </div>
       <Panel title="Recent students" action="View all"><Table head={STU_HEAD} rows={STUDENTS} /></Panel>
-      <ContactGrid title="Contact regional manager" people={REGIONAL_MANAGERS} />
+      <ContactGrid title="Contact regional manager" people={contactsFor('manager')} />
     </>
   )
 }

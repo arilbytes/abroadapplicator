@@ -16,7 +16,7 @@ import StudentDashboard from './student/StudentDashboard'
 const ROLES = {
   admin: { ...admin, Dashboard: AdminDashboard, pages: { 'Company': ManagersTeams } },
   manager: { ...manager, Dashboard: ManagerDashboard },
-  // agent: { ...agent, Dashboard: AgentDashboard },
+  agent: { ...agent, Dashboard: AgentDashboard },
   // lead: { ...lead, Dashboard: TeamLeadDashboard },
   employee: { ...employee, Dashboard: EmployeeDashboard },
   // student: { ...student, Dashboard: StudentDashboard },

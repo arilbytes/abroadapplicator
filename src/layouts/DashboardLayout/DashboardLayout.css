@@ -8,3 +8,6 @@
 .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:15}
 @media(min-width:1024px){.backdrop{display:none}}
 @media(max-width:480px){.page-head h1{font-size:20px}.actions{width:100%}.actions .btn{flex:1}}
+.actions{flex-wrap:wrap}
+.flywire-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.flywire-btn img{height:18px;width:auto;display:block}

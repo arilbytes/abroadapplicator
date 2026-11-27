@@ -1,23 +1,29 @@
 // Agent: navigation, KPI cards and labels
+import admin from '../admin/config'
+
 export default {
+  kpiGroups: admin.kpiGroups,
   "brandable": true,
-  "qrCard": true,
-  "label": "Agent",
+  // "qrCard": true,
+  "label": "Ext Manager",
   "user": "Counsellor",
-  "title": "My students",
+  "title": "Dashboard",
   "nav": [
-    "My Dashboard",
-    "My Students",
-    "New Enquiries",
-    "Register Student",
-    "Counselling Pipeline",
-    "Course Finder",
-    "Documents",
-    "Application Tracker",
-    "Follow-ups",
-    "Messages",
-    "Tasks",
-    "Performance"
+    "Overview",
+    "Team",
+    "Students",
+    "Applications",
+    "Commercial Overview",
+    "Reports",
+    "Enquiries",
+    "Announcements showcase",
+    "Roles & Permissions",
+    "UniProg Search Engine",
+    "Essential Data",
+    "Learning Resources",
+    "Additional Services",
+    "Contact and support",
+    "Settings"
   ],
   "kpis": [
     [

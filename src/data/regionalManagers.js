@@ -2,13 +2,25 @@
 // Photo (optional): put the image in src/assets/managers/ and import it, e.g.
 //   import asha from '../assets/managers/asha.jpg'   ...then   photo: asha
 // Without a photo the card shows the person's initials.
+// export const REGIONAL_MANAGERS = [
+//   // { name: 'Gulshan Kumar Gread', role: 'Sr. Regional Manager', phone: '+91 9175059516', city: 'Delhi', email: 'gkgread@kcoverseas.com' },
+//   // { name: 'Alice Sadarwarti', role: 'Sr. Associate – Sales', phone: '+91 9175976729', city: 'Nagpur', email: 'aasadawarti@kcoverseas.com' },
+//   // { name: 'Tejaswi Nair', role: 'Sr. Manager – Sales', phone: '+91 7420022093', city: 'Mumbai', email: 'tnair@kcoverseas.com' },
+//   // { name: 'Abhijit Naik', role: 'Vice President – Sales', phone: '+91 7758937523', city: 'Pune', email: 'anaik@kcoverseas.com' },
+//   { name: 'Pinki Thakur', role: 'Recruitment – HR', phone: '+91 7303027614', city: 'Delhi', email: 'pinkithakur@gmail.com' },
+//   { name: 'Shabana ', role: 'Manager – GM', phone: '+91 7758937523', city: 'Delhi', email: 'shabana@gmail.com' },
+//   { name: 'Mr. Tejas', role: 'Founder – CEO', phone: '+91 7303020940', city: 'Delhi', email: 'journeyconsultation@gmail.com' },
+// ]
+
+// export const contactsFor = role => REGIONAL_MANAGERS.filter(p => !p.showTo || p.showTo.includes(role))
+// Contact details shown at the bottom of the dashboards.
+// showTo (optional): which views may see this person. Leave it out to show them to everyone.
+// Keys: 'admin' = Founder, 'manager' = Manager, 'lead' = Team Lead, 'employee' = Employee
 export const REGIONAL_MANAGERS = [
-  // { name: 'Gulshan Kumar Gread', role: 'Sr. Regional Manager', phone: '+91 9175059516', city: 'Delhi', email: 'gkgread@kcoverseas.com' },
-  // { name: 'Alice Sadarwarti', role: 'Sr. Associate – Sales', phone: '+91 9175976729', city: 'Nagpur', email: 'aasadawarti@kcoverseas.com' },
-  // { name: 'Tejaswi Nair', role: 'Sr. Manager – Sales', phone: '+91 7420022093', city: 'Mumbai', email: 'tnair@kcoverseas.com' },
-  // { name: 'Abhijit Naik', role: 'Vice President – Sales', phone: '+91 7758937523', city: 'Pune', email: 'anaik@kcoverseas.com' },
-  { name: 'Pinki Thakur', role: 'Recruitment – HR', phone: '+91 7303027614', city: 'Delhi', email: 'pinkithakur@gmail.com' },
-  { name: 'Shabana ', role: 'Manager – GM', phone: '+91 7758937523', city: 'Delhi', email: 'shabana@gmail.com' },
-  { name: 'Mr. Tejas', role: 'Founder – CEO', phone: '+91 7303020940', city: 'Delhi', email: 'journeyconsultation@gmail.com' },
+  { name: 'Pinki Thakur', role: 'Recruitment – HR', phone: '+91 7303027614', city: 'Delhi', email: 'pinkithakur@gmail.com', showTo: ['admin', 'manager'] },
+  { name: 'Shabana', role: 'Manager – GM', phone: '+91 7758937523', city: 'Delhi', email: 'shabana@gmail.com', showTo: ['admin'] },
+  { name: 'Mr. Tejas', role: 'Founder – CEO', phone: '+91 7303020940', city: 'Delhi', email: 'journeyconsultation@gmail.com', showTo: ['admin', 'manager'] },
 ]
 
+// Returns the people a given view may see
+export const contactsFor = role => REGIONAL_MANAGERS.filter(p => !p.showTo || p.showTo.includes(role))
