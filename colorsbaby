@@ -7,12 +7,18 @@ UG/UG Diploma, PG/PG Diploma, Doctoral Programs, Diploma/Certificate Programs, O
 3) What study area?
 {
     Agriculture, Forestry and fishery
-    Architecture, Arts, Commerce, Business and Administration, Computer Science and Information Technology, Education, Education, Engineering and Engineering Trades, Environmental Science/Protection, Health, Humanities, Journalism and Information, Law, Life Sciences, Manufacturing and Processing, Mathematics and Statistics, Personal 
-}
+    Architecture, Arts, Commerce, Business and Administration, Computer Science and Information Technology, Education, Education, Engineering and Engineering Trades, Environmental Science/Protection, Health, Humanities, Journalism and Information, Law, Life Sciences, Manufacturing and Processing, Mathematics and Statistics, Personal  Service, Physical Sciences | Sciences, Security Services, Social and behavioural Science,  Social Services, Transport Services, Veterinary
+    
 4) When to study?
+years : 2026, 2027, 2028 
+
 5) Where do you live?
+Blank filling section 
 
-which file to alter to change operations executive to something else from nav bar of employee's view
 
-In the employee's view, I want to add top performing agents and worst performing agents in a single table below the today's and pending tasks table
-
+Act as a senior software engineer who is experienced in full stack development and understand this entire codebase of this project
+using the attached zip file, your goal is to : 1) Remove unnecessary commented files which are of no use, and due to which
+there will be no issue in the frontend as I want this exact ui, Structure the entire frontend folders and files properly with the same architecture and return me a zip file. 
+2) Analyze which things in this project could potentially make it hard for make me to 
+write backend and make it scalable in the future, and ultimately design the master plan to write write backend for this project for
+production ready usage.

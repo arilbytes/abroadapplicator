@@ -2,11 +2,13 @@
 import admin from './admin/config'
 import manager from './manager/config'
 import agent from './agent/config'
+import exemployee from './exemployee/config'
 import lead from './teamLead/config'
 import employee from './employee/config'
 import student from './student/config'
 import ManagersTeams from './admin/ManagersTeams/ManagersTeams'
 import AdminDashboard from './admin/AdminDashboard'
+import ExEmployeeDashboard from './exemployee/ExEmployeeDashboard'
 import ManagerDashboard from './manager/ManagerDashboard'
 import AgentDashboard from './agent/AgentDashboard'
 import TeamLeadDashboard from './teamLead/TeamLeadDashboard'
@@ -20,5 +22,6 @@ const ROLES = {
   // lead: { ...lead, Dashboard: TeamLeadDashboard },
   employee: { ...employee, Dashboard: EmployeeDashboard },
   // student: { ...student, Dashboard: StudentDashboard },
+  exemployee: { ...exemployee, Dashboard: ExEmployeeDashboard },
 }
 export default ROLES

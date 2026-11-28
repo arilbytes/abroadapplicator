@@ -1,17 +1,222 @@
-.login{display:grid;grid-template-columns:minmax(380px,5fr) 7fr;min-height:100vh}
-.login-hero{background:var(--navy);color:var(--white);padding:56px 48px;display:flex;flex-direction:column;gap:14px}
-.login-hero .logo{font-size:22px;margin-bottom:auto}
-.login-hero h1{font-size:34px;line-height:1.2;max-width:420px}
-.login-hero p{color:rgba(255,255,255,.72);max-width:420px}
-.login-form{background:var(--white);padding:56px max(32px,calc((100% - 440px)/2));display:flex;flex-direction:column;justify-content:center;gap:16px}
-.login-form h2{font-size:24px;color:var(--navy);margin-bottom:8px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{border:1px solid var(--line);background:var(--white);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500}
-.chip.on{background:var(--navy);color:var(--white);border-color:var(--navy)}
-@media(max-width:1023px){
- .login{grid-template-columns:1fr;grid-template-rows:auto 1fr}
- .login-hero{padding:24px 28px;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 20px}
- .login-hero .logo{margin:0;font-size:18px}.login-hero h1{font-size:18px;flex:1;min-width:220px}.login-hero p{display:none}
- .login-form{padding:32px 24px;justify-content:flex-start}
+
+/* =========================================
+   JCG LOGIN PAGE - DESKTOP DESIGN
+========================================= */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #ffffff;
+  font-family: inherit;
+  isolation: isolate;
 }
-@media(min-width:600px) and (max-width:1023px){.login-form{padding:40px max(24px,calc((100% - 440px)/2))}}
+
+/* =========================================
+   TOP NAVY STRIP
+========================================= */
+
+.login-topbar {
+  width: 100%;
+  height: 38px;
+  flex-shrink: 0;
+  background: var(--navy, #101f38);
+  z-index: 2;
+}
+
+/* =========================================
+   MAIN LOGIN SECTION
+========================================= */
+
+.login-main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 24px 180px;
+
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+  width: 100%;
+  max-width: 460px;
+
+  padding: 34px 36px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background: #ffffff;
+  border: 1px solid #e3e8f0;
+  border-radius: 10px;
+
+  box-shadow:
+    0 8px 30px rgba(16, 31, 56, 0.07),
+    0 2px 8px rgba(16, 31, 56, 0.035);
+}
+
+/* =========================================
+   LOGIN HEADING
+========================================= */
+
+.login-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.login-heading h2 {
+  margin: 0;
+  color: var(--navy, #101f38);
+  font-size: 25px;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+}
+
+.login-heading p {
+  margin: 0;
+  color: #858d9b;
+  font-size: 13px;
+}
+
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+.login-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.login-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  color: #263449;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.login-fields input {
+  width: 100%;
+  height: 43px;
+  padding: 0 13px;
+
+  border: 1px solid #e1e5ec;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #263449;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  outline: none;
+
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.login-fields input:focus {
+  border-color: var(--navy, #101f38);
+  box-shadow: 0 0 0 3px rgba(16, 31, 56, 0.07);
+}
+
+.login-fields input::placeholder {
+  color: #a5acb7;
+}
+
+/* =========================================
+   ROLE SELECTION
+========================================= */
+
+.role-section {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.role-label {
+  color: #858d9b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.chip {
+  padding: 8px 16px;
+
+  border: 1px solid #e2e6ed;
+  border-radius: 30px;
+
+  background: #ffffff;
+  color: #303b4c;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 550;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chip:hover {
+  border-color: var(--navy, #101f38);
+  color: var(--navy, #101f38);
+}
+
+.chip.on {
+  background: var(--navy, #101f38);
+  color: #ffffff;
+  border-color: var(--navy, #101f38);
+
+  box-shadow: 0 3px 8px rgba(16, 31, 56, 0.15);
+}
+
+/* =========================================
+   SIGN IN BUTTON
+========================================= */
+.login-footer {
+  position: absolute;
+  bottom: -150px; 
+  left: 0;
+  width: 100%;
+  height: auto; 
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible; 
+}
+
+.login-footer img {
+  display: block;
+  width: 100%;
+  height: auto; 
+  max-width: none;
+  object-fit: contain; 
+  object-position: center bottom;
+  
+  /* ADD THIS LINE */
+  opacity: 0.12; /* 0 = invisible, 1 = fully solid. 0.5 is 50% transparent */
+}

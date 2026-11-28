@@ -1,6 +1,10 @@
+@font-face{font-family:'MyFont';src:url('../assets/font/Milligram-Medium-trial.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'MyFont';src:url('../assets/font/Milligram-Medium-trial.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'MyFont';src:url('../assets/font/Milligram-Medium-trial.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'MyFont';src:url('../assets/font/Milligram-Medium-trial.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
 :root{--navy:#01033D;--primary:#FF1C1C;--accent:#FF1C1C;--black:#000;--white:#fff;--bg:#F5F6FA;--line:#E3E5EF;--mute:#5B5E7A;--navy-2:#0B0E52;--tint:#FFECEC}
 *{box-sizing:border-box;margin:0}
-body{font-family:Montserrat,system-ui,sans-serif;background:var(--bg);color:var(--black);font-size:14px;line-height:1.5}
+body{font-family:MyFont;background:var(--bg);color:var(--black);font-size:14px;line-height:1.5}
 button,input,select{font:inherit}button{cursor:pointer}
 :focus-visible{outline:2px solid var(--primary);outline-offset:2px}
 .muted{color:var(--mute)}.small{font-size:12px}
